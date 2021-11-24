@@ -1,0 +1,116 @@
+
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Curriculum Vitae</title>
+       
+    </head>
+    <body>
+        <header>
+            <h1>Curriculum Vitae</h1>
+        </header>
+        <form action="mailto:cv@gmail.com" method="post" enctype="text/plain">
+       <div>
+           <fieldset id="datospersonales" tabindex="1">
+               <legend>Datos personales</legend>
+               <label>DNI</label>
+               <input type="text" placeholder="XX.XXX.XXXY" maxlength="9" name="nif" pattern="[0-9]{8}[A-Z a-z]{1}" title="DNI" required>
+               <br>
+               <label >Nombre</label>
+               <input type="text" name="nombre" maxlength="20" id="nombre" pattern="[A-Z a-z]" autocomplete="on"><br>
+               <label>Apellido1</label>
+               <input type="text" id="Apellido1" name="apellido1" maxlength="40" autocomplete="on"><br>
+               <label>Apellido2</label>
+               <input type="text" id="Apellido2" name="apellido1" maxlength="40" autocomplete="on"><br>
+               <label>Dirección</label>
+               <input type="text" id="Dirección" name="Dirección" maxlength="50"> <br>
+               <label>Codigo postal</label>
+               <input type="text" id="Cpostal" name="Cpostal" maxlength="6" pattern="[0-9]" placeholder="11111"><br>
+               <label>Población</label>
+               <input type="text" id="Población" name="Población" maxlength="50"> <br>
+               <label>Provincia</label>
+                <select name="lProvicia">
+                    <option value="1">Asturias</option>
+                    <option value="2">Cantabria</option>
+                    <option value="3">Galicia</option>
+                    <option value="4">Madrid</option>
+                    <option value="5">País Vasco</option>
+                </select> <br>
+                <br>
+                <label>Fecha Nacimiento</label>
+                <input type="date" name="FNacm" step="1" min="1900-01-01" max="2018-12-31" value="date"> <br>
+                <label>Sexo</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                <label for="masculino">Maculino</label>
+                <input type="radio" id="femenino" name="sexo" value="femanino" required>
+                <label for="femenino">Femenino</label>
+                <br>
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" placeholder="+xx.xxx.xxx.xxx" maxlength="13" pattern="[09]´9}" required> <br>
+                <label>E-Mail</label>
+                <input type="email" id="email" name="email">
+                
+
+            </fieldset>
+       </div>
+            <fieldset id="Formacion" tabindex="3">
+                <legend>Formación y Experiencia</legend>
+                    <label>Estudios Cursados</label>
+                    <input type="text" id="estudios" name="estudios"> <br>
+                    <label>Títulos</label>
+                    <select>
+                        <option selected value="1">
+                            <option value="1">Ciclo Grado Medio</option>
+                            <option value="2">Ciclo Grado Superior</option>
+                            <option value="3">Estudios Universitarios</option>
+                        </option>
+                    </select>
+                    <br>
+                    <label>Experiencia Laboral</label>
+                    <input type="radio" name="boton" value="1" required> Sí
+                    <input type="radio" name="boton" value="2" required> No
+                    <br>
+                    <label>Idiomas</label>
+                    <select multiple size="4">
+                        <optgroup>
+                            <option value="0">Español</option>
+                            <option value="1">Inglés</option>
+                            <option value="2">Francés</option>
+                            <option value="3">Alemán</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label>Currículum</label>
+                    <input type="file" name="CV" accept=".pdf">
+                </fieldset>
+       <div>
+            <fieldset id="acceso" tabindex="2">
+                <legend>Acceso al Portal</legend>
+                    <label>Usuario</label>
+                    <input type="text" id="Usuario" name="Usuario" pattern="[A-Za-z 0-9]+" maxlength="10" required>
+                    <br>
+                    <label>Contraseña</label>
+                    <input type="password" id="pw" name="pw" maxlength="10" required>
+                    <br>
+            </fieldset>
+       </div> 
+       <div>
+           <fieldset id="otros" tabindex="4">
+               <legend>Otros</legend>
+               <nav>
+                   <textarea name="AA" rows="9" cols="60" placeholder="Indica aquí otra información"></textarea>
+               </nav>
+           </fieldset>
+       </div>
+       <br>
+       <footer>
+           <input type="submit" value="Enviar Datos">
+           <input type="reset" value="Borrar Datos">
+       </footer>
+       </form>
+    </body>
+</html>

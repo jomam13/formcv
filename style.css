@@ -1,0 +1,28 @@
+body{
+    background-color: azure;
+}
+header{
+    text-align: center;
+}
+div{
+    width: 100%;
+    height: auto;
+}
+form{
+    width: 100%;
+    height: auto;
+}
+form  label{
+    display: inline-block;
+    width: 150px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
